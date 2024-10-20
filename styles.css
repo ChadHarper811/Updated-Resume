@@ -8,13 +8,15 @@
 }
 
 html { 
+  scroll-behavior: smooth;
     background: url(https://raw.githubusercontent.com/ChadHarper811/Updated-Resume/2cdf9f354a13c2bf1015a038ec63a3df2aea716d/images/background.jpg) no-repeat center fixed; 
     background-size: cover;
+
 }
 
 body {
+    font-family: 'Nova Square', sans-serif;
     color:var(--off_white);
-    font-weight: bold;
     text-align: center;
     margin: 2% 2% 2% 2%;
 }
@@ -23,6 +25,16 @@ body {
     position: fixed;
     width: 400px;
     background-color: rgba(58, 62, 67, 0.9);
+}
+
+#my_info > h1 {
+  background-color: rgba(214, 214, 214, 0.7);
+  mix-blend-mode: screen;
+  color: black;
+  position: fixed;
+  left: 7%;
+  top: 40%;
+  width: 250px;
 }
 
 #portrait {
@@ -88,4 +100,11 @@ Text-align:right
 
 .intro {
   Margin-bottom: -10px;
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 5px solid var(--light_gray);
+  float: inline-end;
+  width: 100%;
 }
