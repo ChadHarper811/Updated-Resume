@@ -81,7 +81,9 @@ const resumeInfo = [
 
 const myInfoCard = document.getElementById("my_info");
 const educationCard = document.getElementById("education");
+const experience = document.getElementById("experience");
 
+myInfoCard += ``
 
 // data.filter(el => el.day).forEach(
 //     ({day, imgData}) => {

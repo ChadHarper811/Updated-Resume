@@ -1,23 +1,39 @@
 :root {
-  --blue: #092B40;
-  --light_gray: #696969;
-  --gray: #3a3e43;
-  --orange: #c96700;
-  --white: #f0f0f0;
-  --off_white: #d6d6d6;
+    --blue: #092B40;
+    --light_gray: #696969;
+    --gray: #3a3e43;
+    --orange: #c96700;
+    --white: #f0f0f0;
+    --off_white: #d6d6d6;
 }
 
 html { 
-  background: url(https://raw.githubusercontent.com/ChadHarper811/Updated-Resume/2cdf9f354a13c2bf1015a038ec63a3df2aea716d/images/background.jpg) no-repeat center fixed; 
-  background-size: cover;
+    background: url(https://raw.githubusercontent.com/ChadHarper811/Updated-Resume/2cdf9f354a13c2bf1015a038ec63a3df2aea716d/images/background.jpg) no-repeat center fixed; 
+    background-size: cover;
 }
 
 body {
-  color:var(--off_white);
-  font-weight: bold;
-  text-align: center;
-  margin: 5% 5% 0 5%;
-  background-color: rgba(58, 62, 67, 0.9);
+    color:var(--off_white);
+    font-weight: bold;
+    text-align: center;
+    margin: 2% 2% 2% 2%;
+}
+
+#my_info {
+    position: fixed;
+    width: 400px;
+    background-color: rgba(58, 62, 67, 0.9);
+}
+
+#portrait {
+    width: 250px;
+    margin: 20px auto 20px auto;
+}
+
+.all-sections {
+    width: calc(100% - 400px - 2%);
+    background-color: rgba(58, 62, 67, 0.9);
+    float: right;
 }
 
 ul {
@@ -63,7 +79,7 @@ Text-align:left
 Text-align:right
 }
 
-.Section-Exp p {
+.experience p {
   text-decoration: underline;
   margin-top: 0px;
   margin-bottom: 0px;
