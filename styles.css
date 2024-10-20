@@ -1,15 +1,23 @@
+:root {
+  --blue: #092B40;
+  --light_gray: #696969;
+  --gray: #3a3e43;
+  --orange: #c96700;
+  --white: #f0f0f0;
+  --off_white: #d6d6d6;
+}
+
 html { 
   background: url(https://raw.githubusercontent.com/ChadHarper811/Updated-Resume/2cdf9f354a13c2bf1015a038ec63a3df2aea716d/images/background.jpg) no-repeat center fixed; 
   background-size: cover;
 }
 
 body {
-  text-shadow: 1px 1px 3px black;
-  color:white;
+  color:var(--off_white);
   font-weight: bold;
   text-align: center;
   margin: 5% 5% 0 5%;
-  background-color: rgba( 100, 100, 100, 0.4);
+  background-color: rgba(58, 62, 67, 0.9);
 }
 
 ul {
