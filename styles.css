@@ -8,7 +8,7 @@
 }
 
 html { 
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
     background: url(https://raw.githubusercontent.com/ChadHarper811/Updated-Resume/2cdf9f354a13c2bf1015a038ec63a3df2aea716d/images/background.jpg) no-repeat center fixed; 
     background-size: cover;
 
@@ -24,22 +24,47 @@ body {
 #my_info {
     position: fixed;
     width: 400px;
+    height: calc(100% - 4%);
     background-color: rgba(58, 62, 67, 0.9);
+    
 }
 
 #my_info > h1 {
-  background-color: rgba(214, 214, 214, 0.7);
-  mix-blend-mode: screen;
-  color: black;
-  position: fixed;
-  left: 7%;
-  top: 40%;
-  width: 250px;
+    background-color: rgba(214, 214, 214, 0.7);
+    mix-blend-mode: screen;
+    color: black;
+    width: 250px;
+    margin: -75px auto 30px auto;
 }
 
 #portrait {
     width: 250px;
     margin: 20px auto 20px auto;
+}
+
+.info {
+    font-size: 20px;
+    margin: 0px 7px 10px 7px;
+    display: inline-block;
+}
+
+.info a:link, a:visited {
+    color: var(--off_white);
+    text-decoration: none;
+}
+
+.info a:hover {
+  text-shadow: 3px 3px 2px black;
+  transition: 0.5s ease-out;
+}
+
+.info a:hover > .hover {
+    color: var(--orange);
+    transition: 0.5s ease-out;
+}
+
+.hover {
+  color: rgb(214, 214, 214, 0);
 }
 
 .all-sections {

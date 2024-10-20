@@ -1,47 +1,46 @@
 const resumeInfo = [
     {
-        my_info: {
-            name: "Chad Harper",
-            image: "https://raw.githubusercontent.com/ChadHarper811/Updated-Resume/refs/heads/main/images/Portrait.jpg",
-            title: {
+        my_info: [
+            {
                 icon: "fa-solid fa-briefcase",
                 text: "Assistant Manager"
             },
-            home: {
+            {
                 icon: "fa-solid fa-house",
                 text: "Olathe, KS"
             },
-            email: {
+            {
                 icon: "fa-solid fa-envelope",
                 link: "mailto: chadharper811@gmail.com",
                 text: "Email"
             },
-            phone: {
+            {
                 icon: "fa-solid fa-mobile-screen",
                 link: "tel:913-961-8439",
                 text: "Phone"
             },
-            linkedin: {
+            {
                 icon: "fa-brands fa-linkedin",
                 link: "https://www.linkedin.com/in/chadharper811/",
                 text: "LinkedIn: ChadHarper811"
             },
-            github: {
+            {
                 icon: "fa-brands fa-square-github",
                 link: "https://github.com/ChadHarper811",
                 text: "GitHub: ChadHarper811"
             },
-            portfolio: {
+            {
                 icon: "fa-regular fa-folder-open",
                 link: "https://chadharper811.github.io/Personal-Portfolio/",
                 text: "Porfolio site"
-            },
-            coding: {
-                languages: ["Java", "JavaScript", "HTML", "CSS"],
-                frameworks: ["Springboot", "React"],
-                tools: ["MySQL Workbench"]
             }
-
+        ]
+    },
+    {
+        coding: {
+            languages: ["Java", "JavaScript", "HTML", "CSS"],
+            frameworks: ["Springboot", "React"],
+            tools: ["MySQL Workbench"]
         }
     },
     {
@@ -82,8 +81,19 @@ const resumeInfo = [
 const myInfoCard = document.getElementById("my_info");
 const educationCard = document.getElementById("education");
 const experience = document.getElementById("experience");
+const allLinkBrackets = document.getElementsByClassName("hover");
 
-myInfoCard += ``
+resumeInfo[0].my_info.forEach(
+    ({icon, link, text}) => {
+        myInfoCard.innerHTML += `
+        <div class="info"> 
+            ${link ? `<a href="${link}" class="contact-details"> <span class="hover">&lt;</span><i class="${icon}"></i>${text}<span class="hover">&#47;&gt;</span> </a>` : `<i class="${icon}"></i> ${text}`}
+        </div>
+        `
+    }
+)
+
+
 
 // data.filter(el => el.day).forEach(
 //     ({day, imgData}) => {
@@ -98,3 +108,4 @@ myInfoCard += ``
 //             ).join("")}
 //             </div>` 
 // });
+
