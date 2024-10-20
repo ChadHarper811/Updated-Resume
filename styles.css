@@ -44,8 +44,8 @@ body {
 
 .info {
     font-size: 20px;
-    margin: 0px 7px 10px 7px;
-    display: inline-block;
+    margin: 5px 7px 10px 7px;
+    display: block;
 }
 
 .info a:link, a:visited {
@@ -65,6 +65,10 @@ body {
 
 .hover {
   color: rgb(214, 214, 214, 0);
+}
+
+#email, #phone{
+  display: inline;
 }
 
 .all-sections {
@@ -130,6 +134,6 @@ Text-align:right
 footer {
   margin-top: 40px;
   border-top: 5px solid var(--light_gray);
-  float: inline-end;
-  width: 100%;
+  width: calc(100% - 400px - 2%);
+  float: right;
 }

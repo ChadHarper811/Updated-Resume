@@ -2,34 +2,41 @@ const resumeInfo = [
     {
         my_info: [
             {
+                id: "title",
                 icon: "fa-solid fa-briefcase",
-                text: "Assistant Manager"
+                text: "Assistant Team Manager"
             },
             {
+                id: "home",
                 icon: "fa-solid fa-house",
                 text: "Olathe, KS"
             },
             {
+                id: "email",
                 icon: "fa-solid fa-envelope",
                 link: "mailto: chadharper811@gmail.com",
                 text: "Email"
             },
             {
+                id: "phone",
                 icon: "fa-solid fa-mobile-screen",
                 link: "tel:913-961-8439",
                 text: "Phone"
             },
             {
+                id: "linkedin",
                 icon: "fa-brands fa-linkedin",
                 link: "https://www.linkedin.com/in/chadharper811/",
                 text: "LinkedIn: ChadHarper811"
             },
             {
+                id: "github",
                 icon: "fa-brands fa-square-github",
                 link: "https://github.com/ChadHarper811",
                 text: "GitHub: ChadHarper811"
             },
             {
+                id: "portfolio",
                 icon: "fa-regular fa-folder-open",
                 link: "https://chadharper811.github.io/Personal-Portfolio/",
                 text: "Porfolio site"
@@ -84,9 +91,9 @@ const experience = document.getElementById("experience");
 const allLinkBrackets = document.getElementsByClassName("hover");
 
 resumeInfo[0].my_info.forEach(
-    ({icon, link, text}) => {
+    ({id, icon, link, text}) => {
         myInfoCard.innerHTML += `
-        <div class="info"> 
+        <div class="info" id="${id}"> 
             ${link ? `<a href="${link}" class="contact-details"> <span class="hover">&lt;</span><i class="${icon}"></i>${text}<span class="hover">&#47;&gt;</span> </a>` : `<i class="${icon}"></i> ${text}`}
         </div>
         `
