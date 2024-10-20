@@ -37,28 +37,38 @@ const resumeInfo = [
         ]
     },
     {
-        link: "https://chadharper811.github.io/Resume/",
-        icon: "fa-solid fa-file",
-        text: "Resume Site "
-    },
-    {
-        link: "mailto: chadharper811@gmail.com",
-        icon: "fa-solid fa-envelope",
-        text: "Email me "
-    },
-    {
-        link: "tel:913-961-8439",
-        icon: "fa-solid fa-mobile-screen",
-        text: "Call me "
-    },
-    {
-        link: "https://www.linkedin.com/in/chadharper811/",
-        icon: "fa-brands fa-linkedin",
-        text: "LinkedIn "
-    },
-    {
-        link: "https://github.com/ChadHarper811",
-        icon: "fa-brands fa-square-github",
-        text: "GitHub "
+        my_info: {
+            name: "Chad Harper",
+            image: "url",
+            title: {
+                icon: "fa-solid fa-briefcase",
+                text: "Assistant Manager"
+            },
+            home: {
+                icon: "fa-solid fa-house",
+                text: "Olathe, KS"
+            },
+            email: {
+                icon: "fa-solid fa-envelope",
+                link: "mailto: chadharper811@gmail.com",
+                text: "Email"
+            },
+            phone: {
+                icon: "fa-solid fa-mobile-screen",
+                link: "tel:913-961-8439",
+                text: "Phone"
+            },
+            linkedin: {
+                icon: "fa-brands fa-linkedin",
+                link: "https://www.linkedin.com/in/chadharper811/",
+                text: "LinkedIn: ChadHarper811"
+            },
+            github: {
+                icon: "fa-brands fa-square-github",
+                link: "https://github.com/ChadHarper811",
+                text: "GitHub: ChadHarper811"
+            },
+
+        }
     },
 ]
