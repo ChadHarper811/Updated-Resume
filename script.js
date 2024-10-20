@@ -68,6 +68,11 @@ const resumeInfo = [
                 link: "https://github.com/ChadHarper811",
                 text: "GitHub: ChadHarper811"
             },
+            portfolio: {
+                icon: "fa-regular fa-folder-open",
+                link: "https://chadharper811.github.io/Personal-Portfolio/",
+                text: "Porfolio site"
+            }
 
         }
     },
