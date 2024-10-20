@@ -68,24 +68,22 @@ body {
 }
 
 #email, #phone{
-  display: inline;
+  display: inline-block;
 }
 
-.all-sections {
+main {
     width: calc(100% - 350px - 2%);
     background-color: rgba(58, 62, 67, 0.9);
     float: right;
 }
 
 ul {
-  list-style: square inside;
-  margin: 0px;
-  padding: 0;
+  list-style:square;
+  margin: 5px;
 }
 
 li {
-  float: left;
-  margin-left: 10px;
+  text-align: left;
 }
 
 .list::after {
@@ -99,9 +97,9 @@ h1 {
 }
 
 h2 {
-  background-color: rgba( 100, 100, 100, 0.8);
-  border-top: white solid;
-  border-bottom: white solid;
+  background-color: rgb(201, 103, 0, 0.8);
+  border-top: 4px rgb(214, 214, 214, 0.8) solid;
+  border-bottom: 4px rgb(214, 214, 214, 0.8) solid;
 }
 
 .grid-container {
@@ -110,6 +108,7 @@ h2 {
   margin-top: 15px;
   color: rgba( 200, 200, 200);
   text-shadow: 1px 1px 2px black;
+  padding: 0 10px 0 10px;
 }
 
 .item1 {
@@ -125,6 +124,7 @@ Text-align:right
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: left;
+  padding: 0 10px 0 10px;
 }
 
 .intro {

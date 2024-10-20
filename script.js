@@ -51,7 +51,7 @@ const resumeInfo = [
         }
     },
     {
-        summary: "Entry-level web developer with 20+ years customer service experience in retail, service and maintenance fields. Leverages strong communication and problem solving skills to achieve success in team environments and individual assignments. Learns complex tasks quickly and aims to improve efficiency. Knowledgeable in Java and JavaScript. Seeking to learn and become part of a team to work toward a new career in technology."
+        summary: "Entry-level web developer with 20+ years customer service experience in retail, service and maintenance fields. Leverages strong communication and problem solving skills to achieve success in team environments and individual assignments. Learns complex tasks quickly and aims to improve efficiency. Knowledgeable in JavaScript, Java, HTML and CSS. Seeking to learn and become part of a team to work toward a new career in technology."
     },
     {
         education: [
@@ -86,9 +86,15 @@ const resumeInfo = [
 ]
 
 const myInfoCard = document.getElementById("my_info");
+const summary = document.getElementById("summary");
 const educationCard = document.getElementById("education");
 const experience = document.getElementById("experience");
 const allLinkBrackets = document.getElementsByClassName("hover");
+
+summary.innerHTML = `
+    <h2>Summary</h2>
+    <p>${resumeInfo[2].summary}</p>
+    `
 
 resumeInfo[0].my_info.forEach(
     ({id, icon, link, text}) => {
