@@ -1,10 +1,21 @@
 :root {
-    --blue: #092B40;
-    --light_gray: #696969;
-    --gray: #3a3e43;
-    --orange: #c96700;
-    --white: #f0f0f0;
-    --off_white: #d6d6d6;
+  --modal: rgba(0,0,0,0.8);
+  --blue: #092B40;
+  --light_gray: #696969;
+  --gray: #3a3e43;
+  --orange: #c96700;
+  --white: #f0f0f0;
+  --off_white: #d6d6d6;
+  --email-icon: #d1d1d1;
+  --email:#9b9b9b;
+  --phone-icon: #006680;
+  --phone: #00485a;
+  --linkedIn-icon: #0a66c2;
+  --linkedIn: #0a4785;
+  --github-icon: #696969;
+  --github: #3a3e43;
+  --resume-icon: #c96700;
+  --resume: #864500;
 }
 
 html { 
@@ -48,27 +59,41 @@ body {
     display: block;
 }
 
+#email, #phone, #linkedin, #github, #portfolio {
+  border-radius: 2px;
+  padding: 3px 5px;
+    display: inline-block;
+}
+
+#email:hover, #phone:hover, #linkedin:hover, #github:hover, #portfolio:hover {
+    background-position: left;
+    transition: all 1s ease;
+}
+
 .info a:link, a:visited {
     color: var(--off_white);
     text-decoration: none;
 }
 
-.info a:hover {
-  text-shadow: 3px 3px 2px black;
-  transition: 0.5s ease-out;
+#email > a:link, #email > a:visited{
+    color: black;
 }
 
-.info a:hover > .hover {
-    color: var(--orange);
-    transition: 0.5s ease-out;
+#email {
+    color: black;
+    background: linear-gradient(to left, var(--email) 50%, var(--email-icon) 50%);
+    background-size: 200% 100%;
+    background-position: 66% 0%;
 }
 
-.hover {
-  color: rgb(214, 214, 214, 0);
+#phone {
+  background: linear-gradient(to left, var(--phone) 50%, var(--phone-icon) 50%);
+  background-size: 200% 200%;
+  background-position: 73% 0%;
 }
 
-#email, #phone{
-  display: inline-block;
+#linkedin {
+  
 }
 
 main {
@@ -78,62 +103,62 @@ main {
 }
 
 ul {
-  list-style:square;
-  margin: 5px;
+    list-style:square;
+    margin: 5px;
 }
 
 li {
-  text-align: left;
+    text-align: left;
 }
 
 .list::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 h1 {
-  margin-bottom: -10px; 
+    margin-bottom: -10px; 
 }
 
 h2 {
-  background-color: rgb(201, 103, 0, 0.8);
-  border-top: 4px rgb(214, 214, 214, 0.8) solid;
-  border-bottom: 4px rgb(214, 214, 214, 0.8) solid;
+    background-color: rgb(201, 103, 0, 0.8);
+    border-top: 4px rgb(214, 214, 214, 0.8) solid;
+    border-bottom: 4px rgb(214, 214, 214, 0.8) solid;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 15px;
-  color: rgba( 200, 200, 200);
-  text-shadow: 1px 1px 2px black;
-  padding: 0 10px 0 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 15px;
+    color: rgba( 200, 200, 200);
+    text-shadow: 1px 1px 2px black;
+    padding: 0 10px 0 10px;
 }
 
 .item1 {
-Text-align:left
+    Text-align:left
 }
 
 .item2 {
-Text-align:right
+    Text-align:right
 }
 
 .experience p {
-  text-decoration: underline;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: left;
-  padding: 0 10px 0 10px;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    padding: 0 10px 0 10px;
 }
 
 .intro {
-  Margin-bottom: -10px;
+    Margin-bottom: -10px;
 }
 
 footer {
-  margin-top: 40px;
-  border-top: 5px solid var(--light_gray);
-  width: calc(100% - 350px - 2%);
-  float: right;
+    margin-top: 40px;
+    border-top: 5px solid var(--light_gray);
+    width: calc(100% - 350px - 2%);
+    float: right;
 }

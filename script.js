@@ -100,7 +100,7 @@ resumeInfo[0].my_info.forEach(
     ({id, icon, link, text}) => {
         myInfoCard.innerHTML += `
         <div class="info" id="${id}"> 
-            ${link ? `<a href="${link}" class="contact-details"> <i class="${icon}"></i> ${text} </a>` : `<i class="${icon}"></i> ${text}`}
+            ${link ? `<a href="${link}" > <i id="${id}-icon" class="${icon}"></i> ${text} </a>` : `<i id="${id}-icon" class="${icon}"></i> ${text}`}
         </div>
         `
     }
