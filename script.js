@@ -82,6 +82,33 @@ const resumeInfo = [
             },
         ]
     },
+    {
+        experience: [
+            {
+                title: "Assistant Team Manager",
+                company: "Greentec Auto",
+                company_site: "https://www.greentecauto.com/",
+                dates: "August 2023 - Present",
+                bullets1: ["Utilized strong problem-solving skills to recognize and solve the underlying issues the customer was experiencing with our company’s product.", "Keep warehouse storage areas, build team areas, and individual employee work areas organized to optimize productivity, ease of use, and to ensure team safety.", "Train new hires and employees on best work practices for new and current projects and time management skills.", "Oversee build teams' daily job tasks, productivity focus, final product quality assurance checks and review paperwork for missing information, inaccuracies & overall quality."]
+            },
+            {
+                title: "Web Development Course",
+                company: "LaunchCode",
+                company_site: "https://www.launchcode.org/",
+                dates: "May 2023 - January 2024",
+                section1: "Course Coverage:",
+                bullets1: ["Apply foundational coding structures to solve problems using JavaScript and Java.", "Develop full stack web applications that integrate databases to manage user data and a front end in React to display that data.", "Use common developer tools and best practices to write professional-quality code.", "Build software projects from the ground up using in-demand skills and technologies.", "Communicate and demonstrate their professional and technical skills"]
+            },
+            {
+                title: "BookMaster App",
+                company: "LaunchCode - Capstone Project",
+                company_site: "https://www.launchcode.org/",
+                dates: "December 2023 - January 2024",
+                bullets1: ["Developed a library management app with a team of developers.", "Implemented check-in and check-out features with a user display." ,"Created book review feature with update and delete functionality in the user dashboard.", "Applied React routing for page routing and styled the front end of the application, including the navigation bar and drop down menus with a quick view of the user's currently checked out books.", "Full Project Tech stack: JavaScript, React, Java, MySQL, Bootstrap, Spring Boot, Google Books API"]
+            }
+            
+        ]
+    }
     
 ]
 
