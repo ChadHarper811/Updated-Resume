@@ -106,10 +106,10 @@ const resumeInfo = [
                 bullets1: ["Developed a library management app with a team of developers.", "Implemented check-in and check-out features with a user display." ,"Created book review feature with update and delete functionality in the user dashboard.", "Applied React routing for page routing and styled the front end of the application, including the navigation bar and drop down menus with a quick view of the user's currently checked out books.", "Full Project Tech stack: JavaScript, React, Java, MySQL, Bootstrap, Spring Boot, Google Books API"]
             },
             {
-                title: "Team Lead",
+                title: "Team Lead: Food/Drink Runners",
                 company: "Top Golf",
                 dates: "August 2022 - August 2023",
-                bullets1: ["Trained over 15 new hires through job shadowing job duties and assignments.", "Worked with the service manager to rewrite the departmental closing duties checklist to clarify and streamline team operations, saving 45 minutes of employee time each shift.", "Directed drink/food runners in completing job responsibilities outside of typical duties including deep cleaning and organization of drink and food areas."]
+                bullets1: ["Trained over 15 new hires through job shadowing job duties and assignments.", "Worked with the service manager to rewrite the departmental closing duties checklist to clarify and streamline team operations, saving 45 minutes of employee time each shift.", "Directed drink/food runners in completing job responsibilities outside of typical duties including deep cleaning and organization of drink and food areas.", "Making sure all food/drink items are safely stored, in correct temperature and labels up to date"]
             },
             {
                 title: "Trainer/Cook/Crew Member",
@@ -120,7 +120,9 @@ const resumeInfo = [
                 section2: "Cook:",
                 bullets2: ["Food preparation, handling and safety", "Cooking all food for the line and online services areas.", "Maintaining clean and sanitary working conditions while also keeping kitchen area organized"],
                 section3: "Line Crew:",
-                bulets
+                bullets3: ["Assisting customers in preparing their food and any side items", "Keeping food restocked at all times and in range of food safety temperatures"],
+                section4: "Cashier:",
+                bullets4: 
             },
             
         ]
