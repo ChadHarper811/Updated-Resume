@@ -87,7 +87,6 @@ const resumeInfo = [
             {
                 title: "Assistant Team Manager",
                 company: "Greentec Auto",
-                company_site: "https://www.greentecauto.com/",
                 dates: "August 2023 - Present",
                 bullets1: ["Utilized strong problem-solving skills to recognize and solve the underlying issues the customer was experiencing with our company’s product.", "Keep warehouse storage areas, build team areas, and individual employee work areas organized to optimize productivity, ease of use, and to ensure team safety.", "Train new hires and employees on best work practices for new and current projects and time management skills.", "Oversee build teams' daily job tasks, productivity focus, final product quality assurance checks and review paperwork for missing information, inaccuracies & overall quality."]
             },
@@ -105,7 +104,24 @@ const resumeInfo = [
                 company_site: "https://www.launchcode.org/",
                 dates: "December 2023 - January 2024",
                 bullets1: ["Developed a library management app with a team of developers.", "Implemented check-in and check-out features with a user display." ,"Created book review feature with update and delete functionality in the user dashboard.", "Applied React routing for page routing and styled the front end of the application, including the navigation bar and drop down menus with a quick view of the user's currently checked out books.", "Full Project Tech stack: JavaScript, React, Java, MySQL, Bootstrap, Spring Boot, Google Books API"]
-            }
+            },
+            {
+                title: "Team Lead",
+                company: "Top Golf",
+                dates: "August 2022 - August 2023",
+                bullets1: ["Trained over 15 new hires through job shadowing job duties and assignments.", "Worked with the service manager to rewrite the departmental closing duties checklist to clarify and streamline team operations, saving 45 minutes of employee time each shift.", "Directed drink/food runners in completing job responsibilities outside of typical duties including deep cleaning and organization of drink and food areas."]
+            },
+            {
+                title: "Trainer/Cook/Crew Member",
+                company: "Chipotle",
+                dates: "August 2022 - August 2023",
+                section1: "Trainer:",
+                bullets1: ["Trained new employees in daily job duties and store functions.", "Updated training with store policies and maintained other employees updated training"],
+                section2: "Cook:",
+                bullets2: ["Food preparation, handling and safety", "Cooking all food for the line and online services areas.", "Maintaining clean and sanitary working conditions while also keeping kitchen area organized"],
+                section3: "Line Crew:",
+                bulets
+            },
             
         ]
     }
