@@ -14,8 +14,8 @@
   --linkedIn: #0a4785;
   --github-icon: #696969;
   --github: #3a3e43;
-  --resume-icon: #c96700;
-  --resume: #864500;
+  --porfolio-icon: #c96700;
+  --porfolio: #864500;
 }
 
 html { 
@@ -54,7 +54,7 @@ body {
 }
 
 .info {
-    font-size: 20px;
+    font-size: 22px;
     margin: 5px 7px 10px 7px;
     display: block;
 }
@@ -93,7 +93,21 @@ body {
 }
 
 #linkedin {
-  
+  background: linear-gradient(to left, var(--linkedIn) 50%, var(--linkedIn-icon) 50%);
+  background-size: 200% 100%;
+  background-position: 76.5% 0%;
+}
+
+#github {
+  background: linear-gradient(to left, var(--github) 50%, var(--github-icon) 50%);
+  background-size: 200% 100%;
+  background-position: 73% 0%;
+}
+
+#portfolio {
+  background: linear-gradient(to left, var(--porfolio) 50%, var(--porfolio-icon) 50%);
+  background-size: 200% 100%;
+  background-position: 79.5% 0%;
 }
 
 main {
