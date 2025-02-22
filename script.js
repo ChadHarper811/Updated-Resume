@@ -27,13 +27,13 @@ const resumeInfo = [
                 id: "linkedin",
                 icon: "fa-brands fa-linkedin",
                 link: "https://www.linkedin.com/in/chadharper811/",
-                text: "LinkedIn: ChadHarper811"
+                text: "LinkedIn"
             },
             {
                 id: "github",
                 icon: "fa-brands fa-square-github",
                 link: "https://github.com/ChadHarper811",
-                text: "GitHub: ChadHarper811"
+                text: "GitHub"
             },
             {
                 id: "portfolio",
@@ -100,7 +100,7 @@ resumeInfo[0].my_info.forEach(
     ({id, icon, link, text}) => {
         myInfoCard.innerHTML += `
         <div class="info" id="${id}"> 
-            ${link ? `<a href="${link}" class="contact-details"> <span class="hover">&lt;</span><i class="${icon}"></i>${text}<span class="hover">&#47;&gt;</span> </a>` : `<i class="${icon}"></i> ${text}`}
+            ${link ? `<a href="${link}" class="contact-details"> <i class="${icon}"></i> ${text} </a>` : `<i class="${icon}"></i> ${text}`}
         </div>
         `
     }
