@@ -44,14 +44,14 @@ const resumeInfo = [
         ]
     },
     {
-        coding: {
-            languages: ["Java", "JavaScript", "HTML", "CSS"],
-            frameworks: ["Springboot", "React"],
-            tools: ["MySQL Workbench"]
-        }
+        summary: "Entry-level web developer with 20+ years customer service experience in retail, service and maintenance fields. Leverages strong communication and problem solving skills to achieve success in team environments and individual assignments. Learns complex tasks quickly and aims to improve efficiency. Knowledgeable in JavaScript, Java, HTML and CSS. Seeking to learn and become part of a team to work toward a new career in technology."
     },
     {
-        summary: "Entry-level web developer with 20+ years customer service experience in retail, service and maintenance fields. Leverages strong communication and problem solving skills to achieve success in team environments and individual assignments. Learns complex tasks quickly and aims to improve efficiency. Knowledgeable in JavaScript, Java, HTML and CSS. Seeking to learn and become part of a team to work toward a new career in technology."
+        coding: {
+            languages: ["JavaScript", "Java", "HTML", "CSS"],
+            frameworks: ["Springboot", "React", "Bootstrap"],
+            tools: ["MySQL Workbench"]
+        }
     },
     {
         education: [
@@ -153,14 +153,14 @@ const resumeInfo = [
 ]
 
 const myInfoCard = document.getElementById("my_info");
-const summary = document.getElementById("summary");
-const educationCard = document.getElementById("education");
-const experience = document.getElementById("experience");
+const summarySection = document.getElementById("summary");
+const educationSection = document.getElementById("education");
+const experienceSection = document.getElementById("experience");
 const allLinkBrackets = document.getElementsByClassName("hover");
 
-summary.innerHTML = `
+summarySection.innerHTML = `
     <h2>Summary</h2>
-    <p>${resumeInfo[2].summary}</p>
+    <p>${resumeInfo[1].summary}</p>
     `
 
 resumeInfo[0].my_info.forEach(
@@ -172,20 +172,3 @@ resumeInfo[0].my_info.forEach(
         `
     }
 )
-
-
-
-// data.filter(el => el.day).forEach(
-//     ({day, imgData}) => {
-//         gallery.innerHTML += `
-//             <div class="gallery-day-container" id="${day}">
-//             ${imgData.map((e) => `
-//                 <div class="img-container">
-//                     <img class="travel-images" src="${e.src}" alt="${e.caption}" /><br>
-//                     <span class="bold"><span class="hover">&lt;</span> Day ${day} ${imgData.length > 1 ? `#${e.image}` : ""}<span class="hover">&#47;&gt;</span></span><br>
-//                     ${e.caption}
-//                 </div>`
-//             ).join("")}
-//             </div>` 
-// });
-

@@ -131,7 +131,7 @@ li {
     display: table;
 }
 
-h1 {
+#name-plate {
     margin-bottom: -10px; 
 }
 
@@ -139,6 +139,10 @@ h2 {
     background-color: rgb(201, 103, 0, 0.8);
     border-top: 4px rgb(214, 214, 214, 0.8) solid;
     border-bottom: 4px rgb(214, 214, 214, 0.8) solid;
+}
+
+#summary > p {
+    padding: 0 10px;
 }
 
 .grid-container {
@@ -156,14 +160,6 @@ h2 {
 
 .item2 {
     Text-align:right
-}
-
-.experience p {
-    text-decoration: underline;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: left;
-    padding: 0 10px 0 10px;
 }
 
 .intro {
