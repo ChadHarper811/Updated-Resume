@@ -134,6 +134,18 @@ const resumeInfo = [
                 dates: "November 2014 to February 2016",
                 bullets: ["Install/maintain/repair apartments and commercial buildings heating, air conditioning, electrical wiring, electrical conduit, water heaters, plumbing, plumbing appliances, drywall, general appliances, trim work, door frames, cabinets, carpeting, doors and locks, window/door screens, painting (indoor and outdoor), tile, vinyl flooring, concrete, etc.", "Work efficiently in a fast paced atmosphere both independently and as part of a team to complete daily and long term goals", "General grounds work including major and minor landscaping, trash removal, along with ice and snow treatment/removal", "Pool maintenance; including performing chemical testing, recording chemical levels, cleaning, chemical balancing, maintaining water level, and winterizing"],
             },
+            {
+                title: "Residential Technician",
+                company: "The Preserve Apartments & Willow Creek Apartments",
+                dates: "November 2014 to February 2016",
+                bullets: ["Warehouse knowledge and training with forklift operations.", "Familiar with operating a diverse set of vehicles, example: double axle box truck, forlifts, flat bed and stick shift trucks, etc", "Handled customer transactions, processed debit/credit card and cash payments.", "Loaded and unloaded equipment, appliances, and materials upwards of 80+ lbs.", "Residential and Commercial experience in heating, air conditioning, heat pumps, electrical, electric & gas waterheating, duct fabrication & assembly, soldering, brazing, concrete and plumbing work.", "Experience with electrical wiring, conduit,breaker replacement, and breaker panel installation."],
+            },
+            {
+                title: "Warehouse Member",
+                company: "UPS",
+                dates: "October 1012 to July 2013",
+                bullets: ["Load and unload packages and freight, upwards of 80 lbs, in a safe yet timely manner.", "Track packages and ensure package safety while getting parcels to correct destinations.", "Contribute to a clean and safe work environment.", "Successfully work in a team setting to accomplish daily and weekly objectives."],
+            },
             
         ]
     }
