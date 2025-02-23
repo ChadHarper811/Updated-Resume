@@ -88,41 +88,39 @@ const resumeInfo = [
                 title: "Assistant Team Manager",
                 company: "Greentec Auto",
                 dates: "August 2023 - Present",
-                bullets1: ["Utilized strong problem-solving skills to recognize and solve the underlying issues the customer was experiencing with our company’s product.", "Keep warehouse storage areas, build team areas, and individual employee work areas organized to optimize productivity, ease of use, and to ensure team safety.", "Train new hires and employees on best work practices for new and current projects and time management skills.", "Oversee build teams' daily job tasks, productivity focus, final product quality assurance checks and review paperwork for missing information, inaccuracies & overall quality."]
+                bullets: ["Utilized strong problem-solving skills to recognize and solve the underlying issues the customer was experiencing with our company’s product.", "Keep warehouse storage areas, build team areas, and individual employee work areas organized to optimize productivity, ease of use, and to ensure team safety.", "Train new hires and employees on best work practices for new and current projects and time management skills.", "Oversee build teams' daily job tasks, productivity focus, final product quality assurance checks and review paperwork for missing information, inaccuracies & overall quality."]
             },
             {
                 title: "Web Development Course",
                 company: "LaunchCode",
                 company_site: "https://www.launchcode.org/",
                 dates: "May 2023 - January 2024",
-                section1: "Course Coverage:",
-                bullets1: ["Apply foundational coding structures to solve problems using JavaScript and Java.", "Develop full stack web applications that integrate databases to manage user data and a front end in React to display that data.", "Use common developer tools and best practices to write professional-quality code.", "Build software projects from the ground up using in-demand skills and technologies.", "Communicate and demonstrate their professional and technical skills"]
+                bullets: ["Course Coverage:","Apply foundational coding structures to solve problems using JavaScript and Java.", "Develop full stack web applications that integrate databases to manage user data and a front end in React to display that data.", "Use common developer tools and best practices to write professional-quality code.", "Build software projects from the ground up using in-demand skills and technologies.", "Communicate and demonstrate their professional and technical skills"]
             },
             {
                 title: "BookMaster App",
                 company: "LaunchCode - Capstone Project",
                 company_site: "https://www.launchcode.org/",
                 dates: "December 2023 - January 2024",
-                bullets1: ["Developed a library management app with a team of developers.", "Implemented check-in and check-out features with a user display." ,"Created book review feature with update and delete functionality in the user dashboard.", "Applied React routing for page routing and styled the front end of the application, including the navigation bar and drop down menus with a quick view of the user's currently checked out books.", "Full Project Tech stack: JavaScript, React, Java, MySQL, Bootstrap, Spring Boot, Google Books API"]
+                bullets: ["Developed a library management app with a team of developers.", "Implemented check-in and check-out features with a user display." ,"Created book review feature with update and delete functionality in the user dashboard.", "Applied React routing for page routing and styled the front end of the application, including the navigation bar and drop down menus with a quick view of the user's currently checked out books.", "Full Project Tech stack: JavaScript, React, Java, MySQL, Bootstrap, Spring Boot, Google Books API"]
             },
             {
                 title: "Team Lead: Food/Drink Runners",
                 company: "Top Golf",
                 dates: "August 2022 - August 2023",
-                bullets1: ["Trained over 15 new hires through job shadowing job duties and assignments.", "Worked with the service manager to rewrite the departmental closing duties checklist to clarify and streamline team operations, saving 45 minutes of employee time each shift.", "Directed drink/food runners in completing job responsibilities outside of typical duties including deep cleaning and organization of drink and food areas.", "Making sure all food/drink items are safely stored, in correct temperature and labels up to date"]
+                bullets: ["Trained over 15 new hires through job shadowing job duties and assignments.", "Worked with the service manager to rewrite the departmental closing duties checklist to clarify and streamline team operations, saving 45 minutes of employee time each shift.", "Directed drink/food runners in completing job responsibilities outside of typical duties including deep cleaning and organization of drink and food areas.", "Making sure all food/drink items are safely stored, in correct temperature and labels up to date"],
             },
             {
                 title: "Trainer/Cook/Crew Member",
                 company: "Chipotle",
                 dates: "August 2022 - August 2023",
-                section1: "Trainer:",
-                bullets1: ["Trained new employees in daily job duties and store functions.", "Updated training with store policies and maintained other employees updated training"],
-                section2: "Cook:",
-                bullets2: ["Food preparation, handling and safety", "Cooking all food for the line and online services areas.", "Maintaining clean and sanitary working conditions while also keeping kitchen area organized"],
-                section3: "Line Crew:",
-                bullets3: ["Assisting customers in preparing their food and any side items", "Keeping food restocked at all times and in range of food safety temperatures"],
-                section4: "Cashier:",
-                bullets4: 
+                bullets: ["Trained new employees in daily job duties and store functions.", "Updated training with store policies and maintained other employees updated training.","Food preparation, handling and safety.", "Cooking all food for the line and online services areas.", "Maintaining clean and sanitary working conditions while also keeping kitchen, storage, storefront and back of house areas organized.", "Assisting customers in preparing their food and any side items.", "Keeping front line restocked at all times and in range of food safety temperatures.", "Customer service with quick and efficient check out experience."],
+            },
+            {
+                title: "Installation Technician",
+                company: "ITC Service Group LLC for Google Fiber",
+                dates: "February 2016 to December 2018",
+                bullets: ["Keep stock of truck inventory, tools, consumable supplies, and customer documents/pamphlets.", "Maintain and cleaned truck, safety equipment, and uniforms.", "Document detailed work notes, time logs, and paperwork; Including monthly inventory and inspection sheets for company vehicle, tools, and safety equipment.", "Remain up to date with training, pricing, new products, features, in-house information, and future company plans while following company information security protocols", "Install new fiber optic, CAT5e, coaxial, and phone wiring with minimal waste", "Work directly with customers to position and set up equipment for optimal use and customer satisfaction while keeping wiring proficiently concealed.", "Perform job duties while also following local ordinances, building codes, and safety laws."],
             },
             
         ]
