@@ -87,7 +87,7 @@ h3 {
     max-height: 90vh;
     max-width: 100%;
     animation-name: zoom;
-    animation-duration: 1s;
+    animation-duration: .7s;
 }
 
 @keyframes zoom {
