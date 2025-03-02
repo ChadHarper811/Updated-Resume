@@ -185,7 +185,6 @@ data.filter(el => el.coding).forEach(
     ({coding}) => {
         coding.forEach(el => {
             for (let key in el) {
-                console.log(key, el[key])
                 codingSection.innerHTML += `
                 <div id="${key}">
                     <h3>${key}</h3>
@@ -194,6 +193,23 @@ data.filter(el => el.coding).forEach(
                 `
             }
         })}
+)
+
+data.filter(el => el.job).forEach(
+    ({job, title, company, dates, bullets}) => {
+        experienceSection.innerHTML +=`
+        <div id="job${job}" class="jobs">
+            <p><span class="bold">${title}</span> - ${company} <br> ${dates}</p>
+            <ul id="bullets${job}">
+                ${bullets.forEach(el => {
+                    return `<li>${el}</li>`
+                })}
+            </ul>
+
+        </div>
+        `
+        
+    }
 )
 
 data.filter(el => el.icon).forEach(

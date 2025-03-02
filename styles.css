@@ -137,8 +137,8 @@ main {
 }
 
 
-#summary > p {
-    padding: 0 10px;
+#summary > p, #education > p, #experience > div {
+    padding: 0 15px;
 }
 
 #coding {
@@ -147,15 +147,16 @@ main {
 
 #Languages, #Frameworks, #Tools {
     display: inline-block;
-}
-
-#Frameworks {
     padding: 0 10px;
+    margin: 0 -4px;
     border-left: 3px solid var(--off_white);
     border-right: 3px solid var(--off_white);
 }
 
-
+.jobs {
+    display: block;
+    text-align: left;
+}
 
 ul {
     list-style:square;
