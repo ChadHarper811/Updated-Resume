@@ -45,16 +45,20 @@ const data = [
     {
         association: "LaunchCode",
         degree: "Web Development Certification",
+        certificate: "launchCodeCert",
+        image: "",
         year: "2024"
     },
     {
         association: "freeCodeCamp",
         degree: "Responsive Web Design Certification",
+        certificate: "freeCodeCampRWDCert",
         year: "2024"
     },
     {
         association: "freeCodeCamp",
         degree: "JavaScript Algorithms and Data Structures Certification",
+        certificate: "freeCodeCampJSADSCert",
         year: "2025"
     },
     {
@@ -156,13 +160,27 @@ const data = [
     
 ]
 
+const modal = document.getElementById("modal-container");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.getElementById("closeBtn")
 const myInfoCard = document.getElementById("my_info");
 const summarySection = document.getElementById("summary");
 const educationSection = document.getElementById("education");
+const launchCodeCert = document.getElementById("launchCodeCert");
+const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
+const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
 const experienceSection = document.getElementById("experience");
 const codingSection = document.getElementById("coding");
 const allLinkBrackets = document.getElementsByClassName("hover");
 
+[launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert].forEach(
+    (span) => {
+        span.addEventListener("click", (e) => {
+            document.body.classList.add("stop-scrolling");
+
+        }) 
+    }
+)
 
 data.filter(el => el.summary).forEach(
     ({summary}) => {
@@ -174,12 +192,21 @@ data.filter(el => el.summary).forEach(
 );
 
 data.filter(el => el.degree).forEach(
-    ({association, degree, year}) => {
+    ({association, degree, certificate, year}) => {
         educationSection.innerHTML += `
-        <p><span class="bold">${association}</span> ${degree}, ${year}</p>
+        ${certificate? `<p><span class="bold">${association}</span> <span id="${certificate}" class="certificate">${degree}</span>, ${year}</p>` : `<p><span class="bold">${association}</span> ${degree}, ${year}</p>`}
+        
         `
     }
 )
+
+
+
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    modalImg.src = "";
+    document.body.classList.remove("stop-scrolling");
+})
 
 data.filter(el => el.coding).forEach(
     ({coding}) => {
