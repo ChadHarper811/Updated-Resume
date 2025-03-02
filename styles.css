@@ -32,6 +32,22 @@ body {
     margin: 2% 4% 2% 4%;
 }
 
+
+h2 {
+    background-color: rgb(201, 103, 0, 0.8);
+    border-top: 4px rgb(214, 214, 214, 0.8) solid;
+    border-bottom: 4px rgb(214, 214, 214, 0.8) solid;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.bold {
+    font-size: large;
+    font-weight: bold;
+}
+
 #my_info {
     position: fixed;
     width: 350px;
@@ -120,11 +136,6 @@ main {
     margin-bottom: -10px; 
 }
 
-h2 {
-    background-color: rgb(201, 103, 0, 0.8);
-    border-top: 4px rgb(214, 214, 214, 0.8) solid;
-    border-bottom: 4px rgb(214, 214, 214, 0.8) solid;
-}
 
 #summary > p {
     padding: 0 10px;
@@ -144,9 +155,7 @@ h2 {
     border-right: 3px solid var(--off_white);
 }
 
-h3 {
-    margin: 0px;
-}
+
 
 ul {
     list-style:square;

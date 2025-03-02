@@ -173,6 +173,14 @@ data.filter(el => el.summary).forEach(
     }
 );
 
+data.filter(el => el.degree).forEach(
+    ({association, degree, year}) => {
+        educationSection.innerHTML += `
+        <p><span class="bold">${association}</span> ${degree}, ${year}</p>
+        `
+    }
+)
+
 data.filter(el => el.coding).forEach(
     ({coding}) => {
         coding.forEach(el => {
@@ -186,7 +194,6 @@ data.filter(el => el.coding).forEach(
                 `
             }
         })}
-   
 )
 
 data.filter(el => el.icon).forEach(
