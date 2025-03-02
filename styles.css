@@ -87,7 +87,7 @@ h3 {
     max-height: 90vh;
     max-width: 100%;
     animation-name: zoom;
-    animation-duration: 0.3s;
+    animation-duration: 1s;
 }
 
 @keyframes zoom {
@@ -95,7 +95,7 @@ h3 {
     to {transform: scale(1)}
 }
 
-.closeBtn {
+#closeBtn {
     position: absolute;
     right: 10px;
     top: -40px;
@@ -105,7 +105,7 @@ h3 {
     transition: 0.4s;
 }
 
-.closeBtn:hover, .closeBtn:focus {
+#closeBtn:hover, #closeBtn:focus {
     color: var(--porfolio);
     cursor: pointer;
 }

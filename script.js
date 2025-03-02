@@ -43,32 +43,38 @@ const data = [
         summary: "Entry-level web developer with 20+ years of customer service experience in retail, service, and maintenance fields. Strong communication and problem-solving skills lead to success in team environments and individual assignments. Knowledgeable in JavaScript and Java. Seeking to learn and become part of a team to work toward a new career in technology."
     },
     {
+        id: "launchCodeCert",
         association: "LaunchCode",
         degree: "Web Development Certification",
-        certificate: "launchCodeCert",
-        image: "",
+        image: "images/LaunchCode Web Dev Cert.png",
         year: "2024"
     },
     {
+        id: "freeCodeCampRWDCert",
         association: "freeCodeCamp",
         degree: "Responsive Web Design Certification",
-        certificate: "freeCodeCampRWDCert",
+        image: "images/freeCodeCamp Responsive Web Design Cert.png",
         year: "2024"
     },
     {
+        id: "freeCodeCampJSADSCert",
         association: "freeCodeCamp",
         degree: "JavaScript Algorithms and Data Structures Certification",
-        certificate: "freeCodeCampJSADSCert",
+        image: "images/freeCodeCamp Javascript algorithms and data structures.png",
         year: "2025"
     },
     {
+        id: "AS",
         association: "Johnson County Community College",
-        degree: "Associate of Science General Sciences",
+        degree: "Associate of Science, General Sciences",
+        image: "images/General Science AS.jpg",
         year: "2021"
     },
     {
+        id: "AAS",
         association: "Johnson County Community College",
-        degree: "Associate of Applied Science HVAC Residential Service Technician",
+        degree: "Associate of Applied Science, HVAC Residential Service Technician",
+        image: "images/HVAC AAS.jpg",
         year: "2013"
     },
     {
@@ -166,21 +172,9 @@ const closeBtn = document.getElementById("closeBtn")
 const myInfoCard = document.getElementById("my_info");
 const summarySection = document.getElementById("summary");
 const educationSection = document.getElementById("education");
-const launchCodeCert = document.getElementById("launchCodeCert");
-const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
-const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
 const experienceSection = document.getElementById("experience");
 const codingSection = document.getElementById("coding");
 const allLinkBrackets = document.getElementsByClassName("hover");
-
-[launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert].forEach(
-    (span) => {
-        span.addEventListener("click", (e) => {
-            document.body.classList.add("stop-scrolling");
-
-        }) 
-    }
-)
 
 data.filter(el => el.summary).forEach(
     ({summary}) => {
@@ -192,15 +186,12 @@ data.filter(el => el.summary).forEach(
 );
 
 data.filter(el => el.degree).forEach(
-    ({association, degree, certificate, year}) => {
+    ({id, association, degree, year}) => {
         educationSection.innerHTML += `
-        ${certificate? `<p><span class="bold">${association}</span> <span id="${certificate}" class="certificate">${degree}</span>, ${year}</p>` : `<p><span class="bold">${association}</span> ${degree}, ${year}</p>`}
-        
+        <p><span class="bold">${association}</span> <span id="${id}" class="certificate">${degree}</span>, ${year}</p>
         `
     }
 )
-
-
 
 closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
@@ -249,3 +240,20 @@ data.filter(el => el.icon).forEach(
     }
 )
 
+
+const launchCodeCert = document.getElementById("launchCodeCert");
+const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
+const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
+const ASDegree = document.getElementById("AS");
+const AASDegree = document.getElementById("AAS");
+
+[launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert, ASDegree, AASDegree].forEach(
+    (el) => {
+        el.addEventListener("click", (e) => {
+            document.body.classList.add("stop-scrolling");
+            const certID = e.target.id
+            modal.style.display = "block";
+            modalImg.src = data.filter(el => el.id === certID)[0].image;
+        }) 
+    }
+)
