@@ -116,21 +116,6 @@ main {
     float: right;
 }
 
-ul {
-    list-style:square;
-    margin: 5px;
-}
-
-li {
-    text-align: left;
-}
-
-.list::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 #name-plate {
     margin-bottom: -10px; 
 }
@@ -145,25 +130,31 @@ h2 {
     padding: 0 10px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 15px;
-    color: rgba( 200, 200, 200);
-    text-shadow: 1px 1px 2px black;
-    padding: 0 10px 0 10px;
+#coding {
+    display: block;
 }
 
-.item1 {
-    Text-align:left
+#Languages, #Frameworks, #Tools {
+    display: inline-block;
 }
 
-.item2 {
-    Text-align:right
+#Frameworks {
+    padding: 0 10px;
+    border-left: 3px solid var(--off_white);
+    border-right: 3px solid var(--off_white);
 }
 
-.intro {
-    Margin-bottom: -10px;
+h3 {
+    margin: 0px;
+}
+
+ul {
+    list-style:square;
+    margin: 5px;
+}
+
+li {
+    text-align: left;
 }
 
 footer {

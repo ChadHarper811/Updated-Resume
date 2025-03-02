@@ -68,9 +68,18 @@ const data = [
         year: "2013"
     },
     {
-        languages: ["JavaScript", "Java", "HTML", "CSS"],
-        frameworks: ["Springboot", "React", "Bootstrap"],
-        tools: ["MySQL Workbench"]
+        coding: [
+            {
+                Languages: ["JavaScript", "Java", "HTML", "CSS"]
+            },
+            {
+                Frameworks: ["Springboot", "React", "Bootstrap"]
+            },
+            {
+                Tools: ["MySQL Workbench"]
+            }  
+        ]
+        
     },
     {
         job: 1,
@@ -151,6 +160,7 @@ const myInfoCard = document.getElementById("my_info");
 const summarySection = document.getElementById("summary");
 const educationSection = document.getElementById("education");
 const experienceSection = document.getElementById("experience");
+const codingSection = document.getElementById("coding");
 const allLinkBrackets = document.getElementsByClassName("hover");
 
 
@@ -164,15 +174,19 @@ data.filter(el => el.summary).forEach(
 );
 
 data.filter(el => el.coding).forEach(
-    ({languages, frameworks, tools}) => {
-
-        experienceSection.innerHTML += `
-        <div>
-        <h3>Languages</h3>
-        <p>${}</p>
-        </div>
-        `
-    }
+    ({coding}) => {
+        coding.forEach(el => {
+            for (let key in el) {
+                console.log(key, el[key])
+                codingSection.innerHTML += `
+                <div id="${key}">
+                    <h3>${key}</h3>
+                    <p>${el[key].join(", ")}</p>
+                </div>
+                `
+            }
+        })}
+   
 )
 
 data.filter(el => el.icon).forEach(
