@@ -1,21 +1,22 @@
 :root {
-  --modal: rgba(0,0,0,0.8);
-  --blue: #092B40;
-  --light_gray: #696969;
-  --gray: #3a3e43;
-  --orange: #c96700;
-  --white: #f0f0f0;
-  --off_white: #d6d6d6;
-  --email-icon: #d1d1d1;
-  --email:#9b9b9b;
-  --phone-icon: #006680;
-  --phone: #00485a;
-  --linkedIn-icon: #0a66c2;
-  --linkedIn: #0a4785;
-  --github-icon: #696969;
-  --github: #3a3e43;
-  --porfolio-icon: #c96700;
-  --porfolio: #864500;
+    --background: rgba(58, 62, 67, 0.9);
+    --modal: rgba(0,0,0,0.8);
+    --blue: #092B40;
+    --light_gray: #696969;
+    --gray: #3a3e43;
+    --orange: #c96700;
+    --white: #f0f0f0;
+    --off_white: #d6d6d6;
+    --email-icon: #d1d1d1;
+    --email:#9b9b9b;
+    --phone-icon: #006680;
+    --phone: #00485a;
+    --linkedIn-icon: #0a66c2;
+    --linkedIn: #0a4785;
+    --github-icon: #696969;
+    --github: #3a3e43;
+    --porfolio-icon: #c96700;
+    --porfolio: #864500;
 }
 
 html { 
@@ -52,7 +53,7 @@ h3 {
     position: fixed;
     width: 350px;
     height: calc(100% - 4% - 4%);
-    background-color: rgba(58, 62, 67, 0.9);
+    background-color: var(--background);
     
 }
 
@@ -128,8 +129,9 @@ h3 {
 
 main {
     width: calc(100% - 350px - 2%);
-    background-color: rgba(58, 62, 67, 0.9);
+    background-color: var(--background);
     float: right;
+    padding-bottom: 60px;
 }
 
 #name-plate {
@@ -168,8 +170,9 @@ li {
 }
 
 footer {
-    margin-top: 40px;
-    border-top: 5px solid var(--light_gray);
+    padding-top: 40px;
+    background-color: var(--background);
+    border-top: 5px solid var(--off_white);
     width: calc(100% - 350px - 2%);
     float: right;
 }

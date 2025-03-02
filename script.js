@@ -201,9 +201,9 @@ data.filter(el => el.job).forEach(
         <div id="job${job}" class="jobs">
             <p><span class="bold">${title}</span> - ${company} <br> ${dates}</p>
             <ul id="bullets${job}">
-                ${bullets.forEach(el => {
-                    return `<li>${el}</li>`
-                })}
+                ${bullets.map((el) => {
+                    return `<li>${el}</li>`;
+                }).join("")}
             </ul>
 
         </div>
