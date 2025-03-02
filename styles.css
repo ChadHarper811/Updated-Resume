@@ -1,5 +1,5 @@
 :root {
-    --background: rgba(58, 62, 67, 0.9);
+    --background: rgba(58, 62, 67, 0.7);
     --modal: rgba(0,0,0,0.8);
     --blue: #092B40;
     --light_gray: #696969;
@@ -21,7 +21,7 @@
 
 html { 
     scroll-behavior: smooth;
-    background: url(https://raw.githubusercontent.com/ChadHarper811/Updated-Resume/2cdf9f354a13c2bf1015a038ec63a3df2aea716d/images/background.jpg) no-repeat center fixed; 
+    background: url(images/background1.jpg) no-repeat center fixed; 
     background-size: cover;
 
 }
