@@ -80,7 +80,7 @@ const data = [
     {
         coding: [
             {
-                Languages: ["JavaScript", "Java", "HTML", "CSS"]
+                Languages: ["HTML", "CSS", "JavaScript", "Java"]
             },
             {
                 Frameworks: ["Springboot", "React", "Bootstrap"]
@@ -152,16 +152,16 @@ const data = [
     {
         job: 9,
         title: "Residential Technician",
-        company: "The Preserve Apartments & Willow Creek Apartments",
-        dates: "November 2014 to February 2016",
-        bullets: ["Warehouse knowledge and training with forklift operations.", "Familiar with operating a diverse set of vehicles, example: double axle box truck, forlifts, flat bed and stick shift trucks, etc", "Handled customer transactions, processed debit/credit card and cash payments.", "Loaded and unloaded equipment, appliances, and materials upwards of 80+ lbs.", "Residential and Commercial experience in heating, air conditioning, heat pumps, electrical, electric & gas waterheating, duct fabrication & assembly, soldering, brazing, concrete and plumbing work.", "Experience with electrical wiring, conduit,breaker replacement, and breaker panel installation."],
+        company: "LBA Air Conditioning, Heating & Plumbing",
+        dates: "July 2013 to November 2014",
+        bullets: ["Residential and Commercial experience in heating, air conditioning, heat pumps, electrical, electric & gas waterheating, duct fabrication & assembly, soldering, brazing, concrete and plumbing work.", "Experience with electrical wiring, conduit,breaker replacement, and breaker panel installation.", "Warehouse knowledge and training with forklift operations.", "Familiar with operating a diverse set of vehicles, example: double axle box truck, forlifts, flat bed and stick shift trucks, etc", "Loaded and unloaded equipment, appliances, and materials upwards of 80+ lbs.", "Handled customer transactions, processed debit/credit card and cash payments." ],
     },
     {
         job: 10,
         title: "Warehouse Member",
         company: "UPS",
         dates: "October 1012 to July 2013",
-        bullets: ["Load and unload packages and freight, upwards of 80 lbs, in a safe yet timely manner.", "Track packages and ensure package safety while getting parcels to correct destinations.", "Contribute to a clean and safe work environment.", "Successfully work in a team setting to accomplish daily and weekly objectives."],
+        bullets: ["Load and unload packages and freight, upwards of 80+ lbs, in a safe yet timely manner.", "Track packages and ensure package safety while getting parcels to correct destinations.", "Maintained paperwork and computer data pertaining to packages/parcels", "Contribute to a clean and safe work environment.", "Successfully work in a team setting to accomplish daily and weekly objectives."],
     },
     
 ]
