@@ -216,7 +216,7 @@ data.filter(el => el.coding).forEach(
 data.filter(el => el.job).forEach(
     ({job, title, company, dates, bullets}) => {
         experienceSection.innerHTML +=`
-        <div id="job${job}" class="jobs">
+        <div id="job${job}" class="jobs hidden">
             <p><span class="bold">${title}</span> - ${company} <br> ${dates}</p>
             <ul id="bullets${job}">
                 ${bullets.map((el) => {
@@ -239,7 +239,6 @@ data.filter(el => el.icon).forEach(
         `
     }
 )
-
 
 const launchCodeCert = document.getElementById("launchCodeCert");
 const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
