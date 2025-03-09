@@ -175,6 +175,21 @@ const educationSection = document.getElementById("education");
 const experienceSection = document.getElementById("experience");
 const codingSection = document.getElementById("coding");
 const allLinkBrackets = document.getElementsByClassName("hover");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const pages = document.getElementById("pages");
+const totalPages = Math.ceil(data.filter(el => el.job).length / 3)
+let pageIndex = 1;
+
+data.filter(el => el.icon).forEach(
+    ({id, icon, link, text}) => {
+        myInfoCard.innerHTML += `
+        <div class="info" id="${id}"> 
+            ${link ? `<a href="${link}" > <i id="${id}-icon" class="${icon}"></i> ${text} </a>` : `<i id="${id}-icon" class="${icon}"></i> ${text}`}
+        </div>
+        `
+    }
+)
 
 data.filter(el => el.summary).forEach(
     ({summary}) => {
@@ -193,11 +208,6 @@ data.filter(el => el.degree).forEach(
     }
 )
 
-closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    modalImg.src = "";
-    document.body.classList.remove("stop-scrolling");
-})
 
 data.filter(el => el.coding).forEach(
     ({coding}) => {
@@ -216,7 +226,7 @@ data.filter(el => el.coding).forEach(
 data.filter(el => el.job).forEach(
     ({job, title, company, dates, bullets}) => {
         experienceSection.innerHTML +=`
-        <div id="job${job}" class="jobs hidden">
+        <div id="job${job}" class="jobs">
             <p><span class="bold">${title}</span> - ${company} <br> ${dates}</p>
             <ul id="bullets${job}">
                 ${bullets.map((el) => {
@@ -226,19 +236,38 @@ data.filter(el => el.job).forEach(
 
         </div>
         `
-        
     }
 )
 
-data.filter(el => el.icon).forEach(
-    ({id, icon, link, text}) => {
-        myInfoCard.innerHTML += `
-        <div class="info" id="${id}"> 
-            ${link ? `<a href="${link}" > <i id="${id}-icon" class="${icon}"></i> ${text} </a>` : `<i id="${id}-icon" class="${icon}"></i> ${text}`}
-        </div>
+const showpages = (n) => {
+    for (let i = 0; i < totalPages; i++) {
+        pages.innerHTML += `
+            <div id="${i+1}" class="pageNumbers">${(i + 1)}</div>
         `
     }
-)
+}
+
+const showJobs = (n) => {
+    const jobs = document.getElementsByClassName("jobs");
+    const pageNumbers = document.getElementsByClassName("pageNumbers");
+    [...jobs].forEach((job) => {job.style.display = "none"});
+    [...pageNumbers].forEach((page) => {page.classList.remove("activePage")});
+    let currentJob = (pageIndex - 1) * 3
+    if (n > totalPages) {pageIndex = totalPages};
+    if (n < 1) {pageIndex = 1};
+    for (let i = currentJob; i < currentJob + 3; i++) {
+        jobs[i].style.display = "block";
+    }
+    pageNumbers[pageIndex - 1].classList.add("activePage");
+    [...pageNumbers].forEach(
+        (page) => {
+            page.addEventListener("click", (e) => {
+                pageIndex = Number(e.target.id)
+                showJobs(pageIndex);
+            })
+        }
+    )
+}
 
 const launchCodeCert = document.getElementById("launchCodeCert");
 const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
@@ -256,3 +285,30 @@ const AASDegree = document.getElementById("AAS");
         }) 
     }
 )
+
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    modalImg.src = "";
+    document.body.classList.remove("stop-scrolling");
+})
+
+window.addEventListener(onload, showpages(pageIndex));
+window.addEventListener(onload, showJobs(pageIndex));
+
+const prevPage = prevBtn.addEventListener("click", () => {
+    if (pageIndex === 1) {
+        showJobs(pageIndex);
+    } else {
+        pageIndex -= 1;
+        showJobs(pageIndex);
+    }
+});
+
+const nextPage = nextBtn.addEventListener("click", () => {
+    if (pageIndex === totalPages) {
+        showJobs(pageIndex);
+    } else {
+        pageIndex += 1;
+        showJobs(pageIndex);
+    }
+});

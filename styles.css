@@ -230,16 +230,16 @@ li {
     text-align: left;
 }
 
-.hidden {
-    display: none;
-}
-
 #pagination {
     margin-top: 50px;
     display: block;
 }
 
-#prev, #pages, #next {
+#pages {
+    display: inline-block;
+}
+
+#prev, .pageNumbers, #next {
     display: inline-block;
     background-color: var(--background2);
     cursor: pointer;
@@ -251,7 +251,7 @@ li {
     border-radius: 3px;
 }
 
-#prev:hover, #pages:hover, #next:hover {
+#prev:hover, .pageNumbers:hover, #next:hover, .activePage {
     color: var(--gray);
     background-color: var(--orange);
 }
