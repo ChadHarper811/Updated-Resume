@@ -195,10 +195,6 @@ main {
     float: right;
 }
 
-#name-plate {
-    margin-bottom: -10px; 
-}
-
 
 #summary > p, #education > p, #experience > div {
     padding: 0 15px;
